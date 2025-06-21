@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mietigo – Registrierung</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <img src="assets/logo.png" alt="Logo" class="logo" />
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="functions.html">Funktionen</a>
+        <a href="prices.html">Preise</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html" class="btn">Jetzt starten</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container" style="max-width: 400px; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); margin: 4rem auto;">
+      <h2 style="text-align: center;">Registrieren</h2>
+      <form>
+        <div style="margin-bottom: 1rem;">
+          <label for="vorname">Vorname</label><br />
+          <input type="text" id="vorname" name="vorname" required style="width: 100%; padding: 0.5rem;">
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label for="nachname">Nachname</label><br />
+          <input type="text" id="nachname" name="nachname" required style="width: 100%; padding: 0.5rem;">
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label for="telefon">Telefonnummer</label><br />
+          <input type="tel" id="telefon" name="telefon" required pattern="^\+?[0-9\s\-]{7,15}$" placeholder="+41 79 123 45 67" style="width: 100%; padding: 0.5rem;">
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label for="email">E-Mail</label><br />
+          <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem;">
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label for="password">Passwort</label><br />
+          <input type="password" id="password" name="password" required style="width: 100%; padding: 0.5rem;">
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <label for="confirm_password">Passwort bestätigen</label><br />
+          <input type="password" id="confirm_password" name="confirm_password" required style="width: 100%; padding: 0.5rem;">
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label>
+            <input type="checkbox" required />
+            Ich akzeptiere die <a href="#">AGB</a> und <a href="#">Datenschutzerklärung</a>
+          </label>
+        </div>
+        <button type="submit" class="btn" style="width: 100%;">Registrieren</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mietigo GmbH – Made with ❤️ in der Schweiz</p>
+    </div>
+  </footer>
+</body>
+
+</html>
